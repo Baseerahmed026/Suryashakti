@@ -164,7 +164,7 @@ class MainActivity : AppCompatActivity() {
             generated > consumed ->
                 "⚡ You're over-generating! Extra units exported to grid."
             else ->
-                "✅ Balanced usage today. Keep it up!"
+                "✅ Balanced usage today. Keep it up!"//balanced
         }
     }
 
