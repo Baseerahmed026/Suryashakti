@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡ Log Energy"
+            android:textColor="#FFD700"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Date (auto-filled) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE"
+            android:textColor="#AAAAAA"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"/>
+
+        <TextView
+            android:id="@+id/tvLogDate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/card_background"
+            android:paddingStart="12dp"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Weather Condition -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEATHER CONDITION"
+            android:textColor="#AAAAAA"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnSunny"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="☀️ Sunny"
+                android:textColor="#000000"
+                android:backgroundTint="#FFD700"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnCloudy"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="☁️ Cloudy"
+                android:textColor="#FFD700"
+                android:backgroundTint="#1A1A1A"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Simulate Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/card_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🔄 Simulate Generation"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+            <Switch
+                android:id="@+id/switchSimulate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="#FFD700"
+                android:trackTint="#333333"/>
+
+        </LinearLayout>
+
+        <!-- Solar Generated -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOLAR GENERATED (kWh)"
+            android:textColor="#AAAAAA"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"/>
+
+        <EditText
+            android:id="@+id/etGenerated"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/card_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:hint="e.g. 5.5"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Energy Consumed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENERGY CONSUMED (kWh)"
+            android:textColor="#AAAAAA"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"/>
+
+        <EditText
+            android:id="@+id/etConsumed"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/card_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:hint="e.g. 3.2"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Price Per Unit -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRICE PER UNIT (₹/kWh)"
+            android:textColor="#AAAAAA"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"/>
+
+        <EditText
+            android:id="@+id/etPricePerUnit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/card_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#555555"
+            android:hint="Default: ₹8.00"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Net Preview -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estimated Savings"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvNetPreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0.00"
+                android:textColor="#00FF88"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvNetKwh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net: 0.0 kWh"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSaveLog"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="💾 Save Log"
+            android:textColor="#000000"
+            android:backgroundTint="#FFD700"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
