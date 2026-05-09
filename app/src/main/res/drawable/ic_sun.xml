@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="140dp"
+    android:height="140dp"
+    android:viewportWidth="140"
+    android:viewportHeight="140">
+
+    <!-- Outer glow ring -->
+    <path
+        android:fillColor="#20FFD700"
+        android:pathData="M70,10 A60,60 0 1,1 69.9,10 Z"/>
+
+    <!-- Middle ring -->
+    <path
+        android:fillColor="#40FFD700"
+        android:pathData="M70,22 A48,48 0 1,1 69.9,22 Z"/>
+
+    <!-- Sun body -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M70,35 A35,35 0 1,1 69.9,35 Z"/>
+
+    <!-- Sun center bright -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,48 A22,22 0 1,1 69.9,48 Z"
+        android:fillAlpha="0.3"/>
+
+    <!-- Rays -->
+    <path android:fillColor="#FFD700"
+        android:pathData="M70,5 L67,18 L73,18 Z"/>
+    <path android:fillColor="#FFD700"
+        android:pathData="M70,122 L67,135 L73,135 Z"/>
+    <path android:fillColor="#FFD700"
+        android:pathData="M5,70 L18,67 L18,73 Z"/>
+    <path android:fillColor="#FFD700"
+        android:pathData="M122,70 L135,67 L135,73 Z"/>
+    <path android:fillColor="#FFD700"
+        android:pathData="M20,20 L28,30 L33,25 Z"/>
+    <path android:fillColor="#FFD700"
+        android:pathData="M107,107 L115,117 L120,112 Z"/>
+    <path android:fillColor="#FFD700"
+        android:pathData="M120,20 L112,30 L107,25 Z"/>
+    <path android:fillColor="#FFD700"
+        android:pathData="M20,120 L28,110 L33,115 Z"/>
+</vector>

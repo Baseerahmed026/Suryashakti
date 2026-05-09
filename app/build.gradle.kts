@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.devtools.ksp") version "2.0.21-1.0.28" // KSP for Room
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -67,4 +68,32 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
+
+
+    // Bottom Navigation
+    implementation("com.google.android.material:material:1.11.0")
+
+// Fragment
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+
+// Navigation Component
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+
+// SharedPreferences
+    implementation("androidx.preference:preference-ktx:1.2.1")
+
+// Lottie (for splash animation)
+    implementation("com.airbnb.android:lottie:6.3.0")
+
+    // Firebase BOM
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+// Google Sign In
+    implementation("com.google.android.gms:play-services-auth:21.2.0")
+    implementation("com.google.android.gms:play-services-location:21.2.0")
+
+
 }

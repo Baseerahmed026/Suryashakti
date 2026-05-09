@@ -1,7 +1,5 @@
 package com.example.suryashakti.data
 
-
-
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -9,10 +7,13 @@ import androidx.room.PrimaryKey
 data class EnergyLog(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
-
-    val date: String,              // e.g. "2024-04-24"
-    val generatedKwh: Float,       // Solar energy produced
-    val consumedKwh: Float,        // Energy consumed from meter
-    val weatherCondition: String,  // "Sunny" or "Cloudy"
-    val pricePerUnit: Float = 8.0f // ₹ per kWh (default ₹8)
+    val userId: String = "",       // ← ADD THIS
+    val date: String,
+    val generatedKwh: Float,
+    val consumedKwh: Float,
+    val weatherCondition: String,
+    val pricePerUnit: Float = 8.0f,
+    val exportRate: Float = 4.0f,
+    val panelCapacityKw: Float = 3.0f,
+    val co2SavedKg: Float = 0f
 )

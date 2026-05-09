@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Sun Icon -->
+    <ImageView
+        android:id="@+id/ivSunLogin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_sun"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- App Name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="☀ Surya-Shakti"
+        android:textColor="#FFD700"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Solar Energy Monitor"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginBottom="60dp"/>
+
+    <!-- Google Sign In Button -->
+    <LinearLayout
+        android:id="@+id/btnGoogleSignIn"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_google"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:textColor="#4285F4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Google"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Skip / Guest -->
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue as Guest"
+        android:textColor="#555555"
+        android:textSize="13sp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"/>
+
+    <!-- Loading -->
+    <ProgressBar
+        android:id="@+id/progressLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="#FFD700"/>
+
+    <!-- Bottom tagline -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powering your green future 🌱"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:layout_marginTop="60dp"/>
+
+</LinearLayout>
