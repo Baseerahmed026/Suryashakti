@@ -1,44 +1,26 @@
 {
   "project_info": {
-    "project_number": "536460245450",
-    "project_id": "suryashakthi-1ce3a",
-    "storage_bucket": "suryashakthi-1ce3a.firebasestorage.app"
+    "project_number": "279420878678",
+    "project_id": "suryashakti-5c7b2",
+    "storage_bucket": "suryashakti-5c7b2.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:536460245450:android:726d3d485550923808b733",
+        "mobilesdk_app_id": "1:279420878678:android:a561ab8587da82dc7b20f7",
         "android_client_info": {
           "package_name": "com.example.suryashakti"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "536460245450-9ofali1re17j01t4rb49lg556t2e5i79.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.suryashakti",
-            "certificate_hash": "9efd00ae0a37e7d39f27593023723a4075c0d30b"
-          }
-        },
-        {
-          "client_id": "536460245450-5ojr7vd3djt0dtav8i7iqep5f3fctv22.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC7QxXpb6TGHnsIWzsNKILy8lReiNgBvos"
+          "current_key": "AIzaSyCxNRscGD22DfhoYQosentqqieEB2R7BMw"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "536460245450-5ojr7vd3djt0dtav8i7iqep5f3fctv22.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
